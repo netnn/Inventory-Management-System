@@ -29,9 +29,9 @@ This project is hosted on GitHub: [Inventory Management System](https://github.c
    python -m venv venv
    ```
    - On Windows (CMD):
-     ```bash
-     venv\Scripts\activate
-     ```
+   ```bash
+   venv\Scripts\activate
+   ```
 3. Install Dependencies:
    ```bash
    pip install -r requirements.txt
