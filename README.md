@@ -32,7 +32,7 @@ This project is hosted on GitHub: [Inventory Management System](https://github.c
    ```bash
    venv\Scripts\activate
    ```
-3. Install Dependencies:
+3. **Install Dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
