@@ -1,16 +1,16 @@
 from inventory.product import Product
 
 class TestInventory:
-    def test_add_product(self, inventory, sample_product):
-        inventory.add_product(sample_product)
+    def test_add_product(self, inventory, return_sample_product):
+        inventory.add_product(return_sample_product)
         retrieved = inventory.get_product("MacBook")
         assert retrieved is not None
         assert retrieved.name == "MacBook"
         assert retrieved.price == 4000.0
         assert retrieved.quantity == 7
 
-    def test_remove_product(self, inventory, sample_product):
-        inventory.add_product(sample_product)
+    def test_remove_product(self, inventory, return_sample_product):
+        inventory.add_product(return_sample_product)
         inventory.remove_product("MacBook")
         assert inventory.get_product("MacBook") is None
 

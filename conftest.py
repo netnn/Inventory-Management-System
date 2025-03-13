@@ -10,7 +10,7 @@ def inventory():
     return Inventory()
 
 @pytest.fixture
-def sample_product():
+def return_sample_product():
     """
     Fixture that returns a sample product for testing.
     """

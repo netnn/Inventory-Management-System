@@ -26,4 +26,4 @@ class Product:
         return self.price * self.quantity
 
     def __repr__(self):
-        return f"Product(name={self.name}, price={self.price}, quantity={self.quantity})"
+        return f"\n\nProduct(name={self.name}, price={self.price}, quantity={self.quantity})"

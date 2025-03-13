@@ -31,7 +31,7 @@ class Inventory:
             p for p in self.products if p.name.lower() != product_name.lower()
         ]
 
-    def get_product(self, product_name: str, raise_error: bool = False) -> Product:
+    def get_product(self, product_name: str, raise_error: bool = False) -> None:
         """
         Retrieve a product from the inventory by product name.
         Returns None if not found, or optionally raises an error.
@@ -54,4 +54,4 @@ class Inventory:
         return sum(p.total_value() for p in self.products)
 
     def __repr__(self):
-        return f"Inventory with {len(self.products)} products."
+        return f"\n\nInventory with {len(self.products)} products."
